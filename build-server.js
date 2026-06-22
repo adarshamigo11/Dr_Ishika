@@ -6,7 +6,7 @@ const banner = `import { createRequire } from 'module';const require = createReq
 
 async function build() {
   await esbuild.build({
-    entryPoints: ["api/boot.ts"],
+    entryPoints: ["server/boot.ts"],
     bundle: true,
     platform: "node",
     target: "node20",
