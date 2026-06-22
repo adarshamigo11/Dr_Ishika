@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { createRouter, adminQuery, publicQuery } from "./middleware";
-import * as queries from "./queries/doctors";
+import { createRouter, adminQuery, publicQuery } from "./middleware.js";
+import * as queries from "./queries/doctors.js";
 
 export const doctorsRouter = createRouter({
   list: publicQuery

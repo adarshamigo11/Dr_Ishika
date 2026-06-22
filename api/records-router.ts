@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { createRouter, adminQuery, staffQuery, patientQuery, authedQuery } from "./middleware";
-import * as queries from "./queries/medicalRecords";
+import { createRouter, adminQuery, staffQuery, patientQuery, authedQuery } from "./middleware.js";
+import * as queries from "./queries/medicalRecords.js";
 
 export const recordsRouter = createRouter({
   list: adminQuery.query(() => queries.findAllRecords()),

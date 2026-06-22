@@ -1,4 +1,4 @@
-import { ObjectId, getDb } from "./connection";
+import { ObjectId, getDb } from "./connection.js";
 import type { InsertUser, User } from "@db/schema";
 
 export async function findUserByEmail(email: string): Promise<User | null> {

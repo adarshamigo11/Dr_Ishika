@@ -1,4 +1,4 @@
-import { ObjectId, getDb } from "./connection";
+import { ObjectId, getDb } from "./connection.js";
 import type { InsertAppointment, Appointment } from "@db/schema";
 
 export async function findAllAppointments(): Promise<Appointment[]> {

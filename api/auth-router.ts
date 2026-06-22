@@ -1,11 +1,11 @@
 import { z } from "zod";
-import { createRouter, publicQuery, authedQuery } from "./middleware";
-import { signSessionToken } from "./lib/session";
-import { findUserByEmail, createUser, updateUserLastSignIn } from "./queries/users";
-import { env } from "./lib/env";
+import { createRouter, publicQuery, authedQuery } from "./middleware.js";
+import { signSessionToken } from "./lib/session.js";
+import { findUserByEmail, createUser, updateUserLastSignIn } from "./queries/users.js";
+import { env } from "./lib/env.js";
 import * as cookie from "cookie";
 import { Session } from "@contracts/constants";
-import { getSessionCookieOptions } from "./lib/cookies";
+import { getSessionCookieOptions } from "./lib/cookies.js";
 import { TRPCError } from "@trpc/server";
 
 // Simple password hashing using Web Crypto API

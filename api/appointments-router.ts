@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { createRouter, adminQuery, staffQuery, authedQuery } from "./middleware";
-import * as queries from "./queries/appointments";
+import { createRouter, adminQuery, staffQuery, authedQuery } from "./middleware.js";
+import * as queries from "./queries/appointments.js";
 
 export const appointmentsRouter = createRouter({
   list: adminQuery.query(() => queries.findAllAppointments()),
